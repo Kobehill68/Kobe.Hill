@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kobe Hill.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Kobe Hill.</h1>
+        <h2>Full Stack Developer / Drone Pilot / Human</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a href="https://github.com/Kobehill68" class="social"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://www.linkedin.com/in/kobe-hill/" class="social"><i class="fab fa-linkedin"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a href="https://www.instagram.com/airshots.llc/" class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="" class="social"><i class="fab fa-dribbble"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Favorite Projects</h1>
+        <section>
+            <h2>Travel Planner</h2>
+            <p>
+                We all love to travel, it is a big part of are lives. But trying to plan a
+                trip is a hassel. So we set out to making travel planning easy. Our Web Application does just that, you can say our web site is a one stop shop for your traveling needs.               
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;jquery</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Bulma</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Day.js</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Ticketmaster API</div>
+                <div><i class="fas fa-circle"></i>&nbsp;OpenWeather API</div>
+            </div>
+            <a href="https://benjdg.github.io/Travel_App/"><button class="btn_one">Travel Planner</button></a>
+            <a href="https://github.com/Kobehill68/Travel_App"><button class="btn_two">GitHub Repo</button></a>
+        </section>
+        <section>
+            <h2>TPOOPS</h2>
+            <p>
+                We all need toilet paper. But with covid-19 it seems that tp was allways
+                out of supply. So we set out to make a app that allows a user to input where there is tp in stock. 
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Node.js</div>
+                <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Express</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Sequelize</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Handlebars</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Heroku</div>
+            </div>
+            <a href="https://mkkp-project2.herokuapp.com/" class="btn_one">TPOOPS</a>
+            <a href="https://github.com/Kobehill68/P2-tpoops" class="btn_two">GitHub Repo</a>
+        </section>
+        <section>
+            <h2>Note Taker</h2>
+            <p>
+                This program will allow you to record your notes. And save them to a database.If you need help taking noters this is the program for you. You smiply click on the pencil icon in the top right of your screen and this will allow you to create a note.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;MongoDB</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Node.js</div>
+            </div>
+            <a href="https://boiling-gorge-62792.herokuapp.com/" class="btn_one">Note Taker</a>
+            <a href="https://github.com/Kobehill68/11_Note_Taker" class="btn_two">GitHub Repo</a>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>About.</h1>
+            <section>
+                <h2>About Me</h2>
+                <p>
+                   I'm Kobe Hill Nice to meet you. I am full-stack web developer based is Wellsville,KS. I aslo have my part 107 license which a   Pilots
+                    license for drones. After I got my part 107
+                </p>
+                <p>
+                   I grew up loving technology and working with computers. When I was young I started teaching my self how to build
+                    computers. But what really got interested in coding was the class I took in High School. That class
+                    had a major impact on my life because I found something that I was good at and enjoyed doing it. So
+                    that is why I went to the KU Coding BootCamp.
+                </p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <p>
+                    Html, CSS, jquery, Javascript, Node.js, React.js, PWA, MongoDB,
+                    MySql, BootStrap, Bulma, MERN.
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>Contact Me</h1>
+            <section>
+                <p>
+                    <form>
+                        <p>Phone#: 785-214-9810</p><br>
+                        <P>Email: kobehill06@gmail.com</P>
+                        <!-- <textarea placeholder="your message" required rows="5"></textarea><br> -->
+                        <!-- <button class="btn_one">send</button> -->
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            Made by Kobe hill <br> <a href=""></a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
